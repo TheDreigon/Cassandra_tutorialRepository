@@ -8,11 +8,11 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.thedreigon.luAdvanced.springBoot</groupId>
-	<artifactId>creditCard</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>creditCard</name>
-	<description>Project for Spring Boot Advanced Learning Unit</description>
+	<groupId>com.github.td</groupId>
+	<artifactId>cassandra</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>tutorialRepository</name>
+	<description>Training Exercise for Cassandra: a tutorial repository</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -23,42 +23,29 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        
-        <dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
+			<artifactId>spring-boot-starter-data-cassandra</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>com.datastax.oss</groupId>
+			<artifactId>java-driver-core</artifactId>
+			<version>4.11.0</version>
+		</dependency>
+
         
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
         </dependency>
-        
+
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>2.9.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13-beta-2</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>2.27.0</version>
         </dependency>
         
 		<dependency>
